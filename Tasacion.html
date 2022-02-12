@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Gustavo Stepfer Inmobiliaria</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container"> 
+
+        <header class="header">   
+            <div>      
+                <a href="./index.html"><img class="header__logo" src="./Images/Header/Logo.png" alt=""></a>
+            </div>    
+            <ul class="header__ul">
+                <li class="header__li"><a href="./index.html">INICIO</a></li>
+                <li class="header__li"><a href="./Qsomos.html">NOSOTROS</a></li>
+                <li class="header__li"><a href="./Propiedades.html">PROPIEDADES</a></li>
+                <li class="header__li"><a href="./Tasacion.html">TASACIONES</a></li>
+                <li class="header__li"><a href="./Contacto.html">CONTACTANOS</a></li>
+            </ul>          
+        </header>
+        <main class="main">
+            <section class="main__formularioTasacion">
+                <h1>Tasacion de la Propiedad</h1>
+
+                <form action="">
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre aqui...">
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="mail" id="mail" name="mail" required placeholder="Ingresu su email">
+                    </div>
+                    <div>
+                        <label for="Operacion">Tipo de Operacion</label>
+                        <select name="Operacion" id="Operacion">
+                            <option value=""></option>
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Venta">Venta</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="TipoProp">¿Cual es el tipo de propiedad?</label>
+                        <select name="TipoProp" id="TipoProp">
+                            <option value=""></option>
+                            <option value="Casa">Casa</option>
+                            <option value="Dpto">Departamento</option>
+                            <option value="Ph">PH</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Ambientes">Cantidad de ambientes</label>
+                        <input type="number" id="Ambientes" name="Ambientes" required>
+                    </div>
+                    <div>
+                        <table class="main__formularioTasacion--table" border="2">
+                            <tr>
+                                <td><label for="SupCubm2">Superficie Cubierta m2</label></td>
+                                <td><label for="SupNoCubm2">Superficie No Cubierta m2</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="SupCubm2" name="SupCubm2" required placeholder="M2 Cubiertos"></td>
+                                <td><input type="number" id="SupNoCubm2" name="SupNoCubm2" required placeholder="M2 no Cubiertos"></td>                        
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <label for="DatosProp">Descripcion de la Propiedad</label> <br>
+                        <textarea name="DatosProp" id="DatosProp" cols="30" rows="10" placeholder="Breve descripcion de la propiedad"></textarea>
+                    </div>
+                    <input class="formularioTasacion__boton" type="submit" value="Enviar a tasar">
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div>
+                        <p>Pagina Sin fines de Lucro</p>
+            </div>
+                <nav>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="https://www.facebook.com/" target="_blank"> <img src="./Images/Redes Sociales/Facebook.png" alt="imagen facebook"></a></li>
+                        <li class="footer__li"><a href="https://twitter.com/home?lang=es" target="_blank"> <img src="./Images/Redes Sociales/Twitter.png" alt="imagen Twitter"></a></li>
+                        <li class="footer__li"><a href="https://www.instagram.com/?hl=es-la" target="_blank"> <img src="./Images/Redes Sociales/Instagram.png" alt="imagen Instagram"></a></li>
+                    </ul>
+                </nav>
+        </footer>
+    </div>
+</body>
