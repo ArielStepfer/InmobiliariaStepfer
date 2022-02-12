@@ -55,6 +55,11 @@ li{
    
 }
 
+.Titulo{
+    text-align: center;
+    margin: 1em;
+}
+
 .header div{
     display: inline-block;
     margin-right: auto;
