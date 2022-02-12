@@ -112,8 +112,9 @@ MAIN H1{
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    grid-template-areas: "Prop1 Prop2 Prop3"
-                         "Prop4 Prop5 Prop6";
+    grid-template-areas: "Prop1 Prop2" 
+                         "Prop3 Prop4" 
+                         "Prop5 Prop6";
     box-sizing: border-box;
 }
 
@@ -272,12 +273,10 @@ MAIN H1{
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
     padding: 20px;
-    font-size: 1.5em;
 }
 
 .QsomosTexto h1{
     margin-bottom: 1em;
-    font-size: 3em;
     border-bottom: solid;
     border-color: gray;
     
