@@ -88,8 +88,8 @@ li{
 
 .main{
     /*background: linear-gradient(90deg, rgba(2,0,36,0.03125) 3%, rgba(2,76,12,1) 33%, rgba(0,212,255,0) 84%, rgba(25,205,31,0.3533788515406162) 100%);*/ 
-    text-align: center;
     grid-area: main;
+    margin-left: 10px;
 }
 
 MAIN H1{
@@ -167,8 +167,6 @@ MAIN H1{
     transform: translatey(-3%);    
     align-items: center;
     justify-content: center;
-  
-           
 }
 
 .ImagenPropdestc__card img{
@@ -212,7 +210,6 @@ MAIN H1{
     grid-area: Prop4; 
 }   
 
-
 .ImagenPropDestc__contenido{
     line-height: 1.5;
     padding: 15px;
@@ -235,8 +232,6 @@ MAIN H1{
     background: #2fb4cc ;
     color: #fff;
 }
-
-
 
 .main__QSomos--section{
     display: grid;
@@ -320,6 +315,7 @@ MAIN H1{
     font-weight: bolder;
 }
 
+
 .footer div {
         margin-right: auto;
         
@@ -364,6 +360,16 @@ h1{
     grid-area: Prop4 ;
 }
 
+
+.IntroContacto{
+    text-align: center;
+}
+
+.IntroContacto h1{
+        margin-top: 20px;
+        font-size: 3em;
+}
+
 @media (max-width:768px){
 
     .grid-container{
@@ -392,4 +398,4 @@ h1{
                              "Prop3" 
                              "Prop4";
 }
-}
+
