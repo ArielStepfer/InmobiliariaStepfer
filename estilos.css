@@ -4,6 +4,12 @@
     font-family: 'Ubuntu', sans-serif;   
     }
 
+    body{
+        position: relative;
+        min-height: 100vh;
+        height: 500px;
+        
+    }
 .FondoIndex{
     background:url(./Images/Background/Background\ office.jpg);
     background-repeat: no-repeat;
@@ -18,7 +24,7 @@ li{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr auto;
     grid-template-areas: "header   header   header"
                           "main     main     main"
                           "main     main     main"
@@ -38,6 +44,8 @@ li{
     -moz-opacity: 0.80;
     -khtml-opacity: 0.8;
     opacity: 0.8;  
+    position: sticky;
+    top: 0;
 }
 
 .NavBar{
@@ -54,7 +62,21 @@ li{
 
 .InicioPagina{
     height: 75vh;
+    text-align: center;
 }
+
+.InicioPagina h1{
+    align-items: center;
+    font-size: 5em;
+    color: red;
+    margin-top: 1.5em;
+}
+
+.InicioPagina h2{
+    font-size: 4em;
+    color: black;
+}
+
 .Header__Logo{
     margin-right: 40em;
 }
@@ -102,6 +124,7 @@ li{
     margin-left: 10px;
    justify-content: center;
     display: flex;
+    min-height: 100vh;
 }
 
 MAIN H1{
@@ -327,13 +350,9 @@ MAIN H1{
 
 .footer{
     /*background: linear-gradient(90deg, rgba(2,0,36,0.03125) 3%, rgba(2,76,12,1) 33%, rgba(0,212,255,0) 84%, rgba(25,205,31,0.3533788515406162) 100%);*/    
-    grid-column: 1 / span 3;
     grid-area: footer;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bolder;
+    position: relative;
+    bottom: 0;
 }
 
 
