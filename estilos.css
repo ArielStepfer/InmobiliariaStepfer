@@ -4,9 +4,12 @@
     font-family: 'Ubuntu', sans-serif;   
     }
 
-    body{
-        width: 100%;
-    }
+.FondoIndex{
+    background:url(./Images/Background/Background\ office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
     
 li{
     list-style: none;
@@ -25,16 +28,21 @@ li{
 
 .header{ 
     /*background: linear-gradient(90deg, rgba(2,0,36,0.03125) 3%, rgba(2,76,12,1) 33%, rgba(0,212,255,0) 84%, rgba(25,205,31,0.3533788515406162) 100%);*/
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     padding: 0px;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content:flex-end;
     align-items: center;
     grid-area: header;
-
-     
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;  
 }
+
+.NavBar{
+        width: 100%;
+    }
 
 .header a{
     color: black;
@@ -42,6 +50,13 @@ li{
     text-justify: auto;
     text-decoration: none;
     font-weight: BOLDER;  
+}
+
+.InicioPagina{
+    height: 75vh;
+}
+.Header__Logo{
+    margin-right: 40em;
 }
 
 .header a:hover{
@@ -59,9 +74,10 @@ li{
 .Titulo{
     text-align: center;
     margin: 1em;
+    
 }
 
-    .header__ul {
+.header__ul {
         list-style: none;
         display: flex;  
         flex-direction: row; 
@@ -70,7 +86,7 @@ li{
         
     }
     
-    .header__li{
+.header__li{
         display: inline-block;
         width: auto;
         font-style: italic;
@@ -80,12 +96,12 @@ li{
     }
 
 
-
-
 .main{
     /*background: linear-gradient(90deg, rgba(2,0,36,0.03125) 3%, rgba(2,76,12,1) 33%, rgba(0,212,255,0) 84%, rgba(25,205,31,0.3533788515406162) 100%);*/ 
     grid-area: main;
     margin-left: 10px;
+   justify-content: center;
+    display: flex;
 }
 
 MAIN H1{
@@ -142,10 +158,11 @@ MAIN H1{
 
 .main__propdestacadas{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "Prop1 Prop2"
-                         "Prop3 Prop4";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:    repeat(3,1fr);
+    grid-template-areas: "Prop1 Prop2" 
+                         "Prop3 Prop4"
+                         "Prop5 Prop6";
     margin-top: 40PX;
     box-sizing: border-box;
     justify-content:center;
@@ -204,6 +221,14 @@ MAIN H1{
 
 .ImagenPropDestc4{
     grid-area: Prop4; 
+}   
+
+.ImagenPropDestc5{
+    grid-area: Prop5; 
+}   
+
+.ImagenPropDestc6{
+    grid-area: Prop6; 
 }   
 
 .ImagenPropDestc__contenido{
@@ -356,6 +381,12 @@ h1{
     grid-area: Prop4 ;
 }
 
+.Formulario__Contacto{
+    border-color: black;
+    width: 60%;
+    border-style: groove;
+    padding: 1em;
+}
 
 .IntroContacto{
     text-align: center;
@@ -363,7 +394,12 @@ h1{
 
 .IntroContacto h1{
         margin-top: 20px;
-        font-size: 3em;
+        font-size: 4em;
+}
+
+.IntroContacto p{
+    margin-top: 20px;
+    font-size: 1.3em;
 }
 
 @media (max-width:768px){
@@ -392,6 +428,8 @@ h1{
         grid-template-areas: "Prop1" 
                              "Prop2"
                              "Prop3" 
-                             "Prop4";
+                             "Prop4"
+                             "Prop5"
+                             "Prop6";
 }
-
+}

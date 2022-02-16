@@ -16,20 +16,45 @@
     <div class="grid-container"> 
     
         <header class="header">   
-            <div>      
-                <a href="./index.html"><img class="header__logo" src="./Images/Header/Logo.png" alt=""></a>
-            </div>    
-            <ul class="header__ul">
-                <li class="header__li"><a href="./index.html">INICIO</a></li>
-                <li class="header__li"><a href="./Qsomos.html">NOSOTROS</a></li>
-                <li class="header__li"><a href="./Propiedades.html">PROPIEDADES</a></li>
-                <li class="header__li"><a href="./Tasacion.html">TASACIONES</a></li>
-                <li class="header__li"><a href="./Contacto.html">CONTACTANOS</a></li>
-            </ul>          
-        </header>
-        
+            <div class="NavBar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" width="100%">
+                <div class="container-fluid">
+                  <div class="Header__Logo">
+                      <a class="navbar-brand" href="./index1.html">
+                          <img src="./Images/Header/Logo.png" alt="imagen Logo">
+                      </a>
+                 </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent" width="100%">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index1.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active"  href="./Qsomos.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Tasacion.html">Tasacion</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="./Propiedades.html"> Propiedades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" nav-link active" href="./Contacto.html">Contactanos</a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>  
+            </div>
+              
+        </header>        
         <main class="main">
 
+            
+        <div class="Formulario__Contacto">
             <div class="IntroContacto">
                 <h1>CONTACTO</h1>
                 <p>Lo invitamos a dejarnos sus datos y nos contactaremos con usted a la brevedad.</p>
@@ -57,15 +82,16 @@
                     <input type="number" class="form-control" id="Telefono" required placeholder="1165214558">
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" style="text-align: center;">
                     <label for="Mensaje" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="Mensaje" placeholder="Deje su mensaje, a la brevedad nos comunicaremos" rows="4"></textarea>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" style="margin-left: 22em;">
                     <button class="btn btn-primary">Enviar</button>
                 </div>
             </form>
+        </div>
         </main>
 
 
