@@ -9,6 +9,8 @@
     <title>Gustavo Stepfer Inmobiliaria</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 </head>
 
@@ -20,7 +22,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light" width="100%">
                 <div class="container-fluid">
                   <div class="Header__Logo">
-                      <a class="navbar-brand" href="./index.html">
+                      <a class="navbar-brand" href="./index2.html">
                           <img src="./Images/Header/Logo.png" alt="imagen Logo">
                       </a>
                  </div>
@@ -30,7 +32,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" width="100%">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="./index2.html">Inicio</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active"  href="./Qsomos.html">Nosotros</a>
@@ -51,62 +53,89 @@
             </div>
               
         </header>        
-        <main class="main">
+        <main class="main" style="justify-content: center; align-items: center; left: 50%   ;">   
+            <div class="Formulario__Contacto" style="width: 30em; height: 37em; justify-content: center;">
+                <div class="IntroContacto">
+                    <h1>CONTACTO</h1>
+                    <p>Lo invitamos a dejarnos sus datos y nos contactaremos con usted a la brevedad.</p>
+                </div>
+                
+                <form class="row g-3"; style="height: 5px;" >      
 
-            
-        <div class="Formulario__Contacto" style="width: 30em; height: 37em;;">
-            <div class="IntroContacto">
-                <h1>CONTACTO</h1>
-                <p>Lo invitamos a dejarnos sus datos y nos contactaremos con usted a la brevedad.</p>
+                    <div class="col-md-6" ;">
+                        <label for="Nombre"  class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="Apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="Apellido" required>
+                    </div>
+
+                    <div class="col-md-8">    
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="Email" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="Telefono" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="Telefono" required placeholder="1165214558">
+                    </div>
+
+                    <div class="col-md-12" style="text-align: center;">
+                        <label for="Mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="Mensaje" placeholder="Deje su mensaje, a la brevedad nos comunicaremos" rows="4"></textarea>
+                    </div>
+
+                    <div class="col-md-12" style="margin-left: 9em;">
+                        <button class="btn btn-primary" style="width: 8em; font-size: larger;" >Enviar</button>
+                    </div>
+                </form>
             </div>
-            
-            <form class="row g-3"; style="height: 5px;" >      
-
-                <div class="col-md-6" ;">
-                    <label for="Nombre"  class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="Nombre" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label for="Apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="Apellido" required>
-                </div>
-
-                <div class="col-md-8">    
-                    <label for="Email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="Email" required>
-                </div>
-
-                <div class="col-md-4">
-                    <label for="Telefono" class="form-label">Telefono</label>
-                    <input type="number" class="form-control" id="Telefono" required placeholder="1165214558">
-                </div>
-
-                <div class="col-md-12" style="text-align: center;">
-                    <label for="Mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="Mensaje" placeholder="Deje su mensaje, a la brevedad nos comunicaremos" rows="4"></textarea>
-                </div>
-
-                <div class="col-md-12" style="margin-left: 9em;">
-                    <button class="btn btn-primary" style="width: 8em; font-size: larger;" >Enviar</button>
-                </div>
-            </form>
-        </div>
         </main>
-
-
-        <footer class="footer">
-            <div>
-                        <p>Pagina Sin fines de Lucro</p>
+        <footer class="footer bg-dark text-white pt-5 pb-5">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">inmobilaria Stepfer</h5>
+                        <p style="text-align:justify;">Stepfer Propiedades, es una inmobiliaria comercial ubicada en el centro geográfico de la Ciudad de Buenos Aires que ofrece: Inmuebles Industriales - Alquiler y Venta de Depósitos, Galpones y Edificios Industriales ubicados principalmente en la Zona Centro y Sur de la Capital Federal. Inmuebles Comerciales: Comercialización de Locales, venta de terrenos y alquileres de oficinas. Inmuebles Residenciales: Alquiler y venta de departamentos en la Ciudad de Buenos Aires. Servicio de Tasaciones judiciales y privadas con el aval de martilleros especializados</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> inc. 8 Art. 10 de la Ley 2340</h5>
+                        <p style="text-align:justify;">Incorpórase como inciso 8 del artículo 10 de la Ley 2340 (texto consolidado según Ley N° 5666) el siguiente texto: Hacer constar en todo ofrecimiento publicitario de locación de inmuebles con destino habitacional que se emita vía páginas web, propias o de terceros, la siguiente leyenda: "Para los casos de alquiler de vivienda, el monto máximo de comisión que se le puede requerir a los propietarios será el equivalente al cuatro con quince centésimos por ciento (4,15%) del valor total del respectivo contrato. Se encuentra prohibido cobrar a los inquilinos que sean personas físicas comisiones inmobiliarias y gastos de gestoría de informes".- C.U.C.I.C.B.A – MARIA PAULA ALEMANY- Mat .N° 2878</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 text-align-center font-weight-bold text-warning"> Contacto</h5>
+                        <p>
+                            <i class="fas fa-home mr-3" ></i> Mendez De Andes 522, CABA
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-3" ></i> StepferPropiedades@gmail.com
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3" ></i>+54 9 11 6357-7516
+                        </p>
+                    </div>
+    
+                    <div class="col-md-1 col lg-1 col-xl-1 mx-auto mt-3">
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline" style="height: 30em;">
+                                    <li>
+                                        <a href="" class="btn-floating btn-sm text-white" style="font-size: 4.5em;"> <i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-floating btn-sm text-white" style="font-size: 4.5em;"> <i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-floating btn-sm text-white" style="font-size: 4.5em;"> <i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                    </div>
+                </div>
             </div>
-                <nav>
-                    <ul class="footer__ul">
-                        <li class="footer__li"><a href="https://www.facebook.com/" target="_blank"> <img src="./Images/Redes Sociales/Facebook.png" alt="imagen facebook"></a></li>
-                        <li class="footer__li"><a href="https://twitter.com/home?lang=es" target="_blank"> <img src="./Images/Redes Sociales/Twitter.png" alt="imagen Twitter"></a></li>
-                        <li class="footer__li"><a href="https://www.instagram.com/?hl=es-la" target="_blank"> <img src="./Images/Redes Sociales/Instagram.png" alt="imagen Instagram"></a></li>
-                    </ul>
-                </nav>
-        </footer>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
