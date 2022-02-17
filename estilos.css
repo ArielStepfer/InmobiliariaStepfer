@@ -418,13 +418,14 @@ h1{
     }
 
     .main__propiedades__contenedor{
-            grid-template-columns: 1fr;
             grid-template-areas: "Prop1" 
                                   "Prop2" 
                                   "Prop3"
-                                   "Prop4"
+                                  "Prop4"
                                   "Prop5"
-                                   "Prop6";
+                                  "Prop6";
+            align-items: center;
+            justify-content: center;
     }
 
 .main__propdestacadas {
