@@ -7,7 +7,7 @@
     body{
         position: relative;
         min-height: 100vh;
-        height: 500px;
+        
         
     }
 .FondoIndex{
@@ -81,6 +81,11 @@ li{
     margin-right: 40em;
 }
 
+.Header__Logo:hover{
+    -webkit-transform: rotate(360deg);
+    transition: 1.5s ease-in;
+}
+
 .header a:hover{
     color: gray;
     border-top: solid;
@@ -139,9 +144,7 @@ MAIN H1{
 }
 
 .main__propiedades__contenedor{
-    display: grid;
-    grid-template-columns: repeat (4,1fr);
-    grid-template-rows: repeat (2,1fr);
+    display: flex;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;    
