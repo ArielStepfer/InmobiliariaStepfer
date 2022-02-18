@@ -119,10 +119,11 @@ li{
 
 
 .main{
-    /*background: linear-gradient(90deg, rgba(2,0,36,0.03125) 3%, rgba(2,76,12,1) 33%, rgba(0,212,255,0) 84%, rgba(25,205,31,0.3533788515406162) 100%);*/ 
     grid-area: main;
-    margin-left: 10px;
+    margin: 1em;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 MAIN H1{
@@ -264,46 +265,38 @@ MAIN H1{
 
 .main__QSomos--section{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-row: auto auto;
-    text-align:start;
-    margin-left: 2em;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "Img2 Texto1"
+                         "Img1 Texto1";
+    margin-left: 1em;
+    padding: 2em;
+   
 }
 .imagen1Qsomos{
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    
+    grid-area: Img1;
 }
 
 .imagen1Qsomos__imagen{
     background-size:100% 100%;
-    text-align: left;
-    
 }
 
 .imagen2Qsomos{
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    
+    grid-area: Img2;    
 }
-.imagen2Qsomos__imagen{
 
+.imagen2Qsomos__imagen{
     background-size:100% 100%;
-    text-align: left;
 }
 
 .QsomosTexto{
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-    padding: 20px;
+    grid-area: Texto1;
 }
 
 .QsomosTexto h1{
     margin-bottom: 1em;
     border-bottom: solid;
-    border-color: gray;
-    
+    border-color: gray;   
 }
 
 .QsomosTexto h2{
@@ -316,7 +309,7 @@ MAIN H1{
 
 
 .QsomosTexto p{
-    margin-top: 20px;
+    margin-top: 1em;
     text-align:justify;
     font-size: 1.5em;
 }
@@ -334,39 +327,17 @@ MAIN H1{
 }
 
 .footer{
-    /*background: linear-gradient(90deg, rgba(2,0,36,0.03125) 3%, rgba(2,76,12,1) 33%, rgba(0,212,255,0) 84%, rgba(25,205,31,0.3533788515406162) 100%);*/    
     grid-area: footer;
     position: relative;
     bottom: 0;
+    width: 100%;
 }
-
-
-.footer div {
-        margin-right: auto;
-        
-    }
-
-.footer__ul {
-    list-style: none;
-    display: flex;  
-    
-}
-
-.footer__li{
-    display:inline-block;
-    width: 50%;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-}
-
 
 .contenido__botones {
     border-style: solid;
     background-color: coral;
     font-size: large;
-    display: inline-block;
-    
+    display: inline-block;    
 }    
     
 .formularioTasacion__boton{
@@ -377,6 +348,9 @@ h1{
     font-size: 50px;
 }
 
+#Ley{
+    font-size: 0.8em;
+}
 .main__formularioTasacion--table{
     width: 100%;    
 }
@@ -387,9 +361,12 @@ h1{
 
 .Formulario__Contacto{
     border-color: black;
-    width: 60%;
     border-style: groove;
     padding: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 40em;
 }
 
 .IntroContacto{
@@ -407,6 +384,20 @@ h1{
 }
 
 @media (max-width:768px){
+
+    .InicioPagina h1{
+        font-size:2em;
+        font-weight: bolder;
+        background-color: rgba(0, 0, 0, 0.568);
+}
+
+.InicioPagina h2{
+    font-size: 1.8em;
+    margin-top: 2.1em ;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.568)
+}
+
 
     .grid-container{
         grid-template-columns: repeat(2,1fr);
@@ -436,5 +427,12 @@ h1{
                              "Prop4"
                              "Prop5"
                              "Prop6";
+}
+.main__QSomos--section{
+    grid-template-columns: 1fr;
+    grid-template-areas: "Img1"
+                         "Img2"
+                         "Texto1";
+
 }
 }
