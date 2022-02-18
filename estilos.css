@@ -314,9 +314,8 @@ MAIN H1{
 .QsomosTexto p{
     margin-top: 1em;
     text-align:justify;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
-
 
 .main__formcontacto--botones{
     align-content: center;
@@ -388,7 +387,7 @@ h1{
 
 @media (max-width:768px){
 
-    .InicioPagina h1{
+.InicioPagina h1{
         font-size:2em;
         font-weight: bolder;
         background-color: rgba(0, 0, 0, 0.568);
@@ -438,4 +437,26 @@ h1{
                          "Texto1";
 
 }
+
+.QsomosTexto h1{
+    font-size: 1.6em;
+    text-align: center;  
+}
+
+.QsomosTexto h2{
+    margin-top: 0.5em;
+    border-top: solid;
+    border-color: gray;
+    margin-bottom: 0.5em;
+    font-size: 1.6em;
+    
+}
+
+
+.QsomosTexto p{
+    margin-top: 1em;
+    text-align:justify;
+    font-size: 0.8em;
+}
+
 }
