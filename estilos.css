@@ -296,12 +296,16 @@ MAIN H1{
     grid-area: Texto1;
 }
 
+.scale-up-hor-left {
+	-webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 .QsomosTexto h1{
     margin-bottom: 1em;
     border-bottom: solid;
     border-color: gray;   
 }
-
 .QsomosTexto h2{
     margin-top: 0.5em;
     border-top: solid;
@@ -476,3 +480,17 @@ h1{
     }
        
 }
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
