@@ -435,6 +435,9 @@ h1{
     grid-template-areas: "Img1"
                          "Img2"
                          "Texto1";
+    width: 100%;
+    left: 0;
+    padding: 0px;
 
 }
 
@@ -459,4 +462,17 @@ h1{
     font-size: 0.8em;
 }
 
+}
+
+@media (max-width:550px){
+    .main__QSomos--section{
+        grid-template-columns: 1fr;
+        grid-template-areas: "Img1"
+                             "Img2"
+                             "Texto1";
+        width: 500px;
+        padding: 0px;       
+    
+    }
+       
 }
