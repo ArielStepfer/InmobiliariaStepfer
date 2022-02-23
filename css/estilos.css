@@ -10,12 +10,6 @@
         
         
     }
-.FondoIndex{
-    background:url(./Images/Background/Background\ office.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
     
 li{
     list-style: none;
@@ -48,7 +42,7 @@ li{
     top: 0;
 }
 
-.NavBar{
+.header__NavBar{
         width: 100%;
     }
 
@@ -60,22 +54,7 @@ li{
     font-weight: BOLDER;  
 }
 
-.InicioPagina{
-    height: 75vh;
-    text-align: center;
-}
 
-.InicioPagina h1{
-    align-items: center;
-    font-size: 5em;
-    color: red;
-    margin-top: 1.5em;
-}
-
-.InicioPagina h2{
-    font-size: 4em;
-    color: black;
-}
 
 .Header__Logo{
     margin-right: 40em;
@@ -131,6 +110,22 @@ li{
     justify-content: center;
 }
 
+.InicioPagina{
+    height: 75vh;
+    text-align: center;
+}
+
+.InicioPagina h1{
+    align-items: center;
+    font-size: 5em;
+    color: red;
+    margin-top: 1.5em;
+}
+
+.InicioPagina h2{
+    font-size: 4em;
+    color: black;
+}
 MAIN H1{
     margin-bottom: 20PX;
 }
@@ -274,6 +269,7 @@ MAIN H1{
                          "Img1 Texto1";
     margin-left: 1em;
     padding: 2em;
+    object-fit:cover;
    
 }
 .imagen1Qsomos{
@@ -383,10 +379,6 @@ h1{
 
 
 
-
-
-
-
 @media (max-width:768px){
 
 .InicioPagina h1{
@@ -478,10 +470,11 @@ h1{
         grid-template-areas: "Img1"
                              "Img2"
                              "Texto1";
-        width: 100%;
+        max-width: 200px; 
         padding: 0px;       
     
     }
+    
     .Imagen1Qsomos__imagen{
         width: 100%;
      }
@@ -506,3 +499,9 @@ h1{
     }
 
   }
+  .FondoIndex{
+    background:url(./Images/Background/Background\ office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
