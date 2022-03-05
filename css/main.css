@@ -39,7 +39,7 @@
             text-decoration: none;
             font-weight: BOLDER; }
         .grid-container .header .header__NavBar .Header__Logo:hover {
-          -webkit-transform: rotate(360deg);
+          -webkit-transform: animate__zoomIn;
           transition: 3s ease-in; }
       .grid-container .header .header__NavBar ul {
         list-style: none;
@@ -93,27 +93,34 @@
     .grid-container .main .Titulo {
       text-align: center;
       margin: 1em; }
-    .grid-container .main .main__propiedades__contenedor {
+  .grid-container .mainPopiedades {
+    grid-area: main;
+    margin: 1em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap; }
+    .grid-container .mainPopiedades .main__propiedades__contenedor {
       display: flex;
       align-content: center;
       justify-content: center;
       flex-wrap: wrap;
       grid-template-areas: "Prop1 Prop2 Prop3 Prop4" "Prop5 Prop6 Prop6 Prop6";
       box-sizing: border-box; }
-      .grid-container .main .main__propiedades__contenedor .main__propiedades__imagen {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen {
         grid-area: Prop1;
         display: flex; }
-      .grid-container .main .main__propiedades__contenedor .main__propiedades__imagen2 {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen2 {
         grid-area: Prop2; }
-      .grid-container .main .main__propiedades__contenedor .main__propiedades__imagen3 {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen3 {
         grid-area: Prop3; }
-      .grid-container .main .main__propiedades__contenedor .main__propiedades__imagen4 {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen4 {
         grid-area: Prop4; }
-      .grid-container .main .main__propiedades__contenedor .main__propiedades__imagen5 {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen5 {
         grid-area: Prop5; }
-      .grid-container .main .main__propiedades__contenedor .main__propiedades__imagen6 {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen6 {
         grid-area: Prop6; }
-      .grid-container .main .main__propiedades__contenedor .ImagenPropdestc__card {
+      .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card {
         display: flex;
         flex-direction: column;
         margin: 20px;
@@ -126,11 +133,11 @@
         align-items: center;
         justify-content: center;
         width: 18rem; }
-        .grid-container .main .main__propiedades__contenedor .ImagenPropdestc__card img {
+        .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card img {
           margin: 1em; }
-        .grid-container .main .main__propiedades__contenedor .ImagenPropdestc__card p {
+        .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card p {
           margin: 0.1em; }
-        .grid-container .main .main__propiedades__contenedor .ImagenPropdestc__card a {
+        .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card a {
           text-decoration: none;
           display: inline-block;
           padding: 10px;
@@ -140,7 +147,7 @@
           border-radius: 4px;
           transition: all 400ms ease;
           margin: 20px; }
-          .grid-container .main .main__propiedades__contenedor .ImagenPropdestc__card a:HOVER {
+          .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card a:HOVER {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
   .grid-container .footer {
     grid-area: footer;

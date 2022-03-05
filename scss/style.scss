@@ -39,15 +39,15 @@
                         color: black;
                         border-top: solid;
                         border-BOTTOM: solid;
-                    border-color: black;
-                    align-items:baseline;
-                    text-justify: auto;
-                    text-decoration: none;
-                    font-weight: BOLDER;  
+                        border-color: black;
+                        align-items:baseline;
+                        text-justify: auto;
+                        text-decoration: none;
+                        font-weight: BOLDER;  
                     } 
                 }
             &:hover{
-                -webkit-transform: rotate(360deg);
+                -webkit-transform: animate__zoomIn;
                 transition: 3s ease-in;
             }
         }
@@ -124,20 +124,29 @@
             text-align: center;
             margin: 1em;
         }
+    }
+    
+    .mainPopiedades{
+        grid-area: main;
+        margin: 1em;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
         .main__propiedades__contenedor{
             display: flex;
             align-content: center;
             justify-content: center;
             flex-wrap: wrap;    
             grid-template-areas: "Prop1 Prop2 Prop3 Prop4"
-                                "Prop5 Prop6 Prop6 Prop6";
+                                 "Prop5 Prop6 Prop6 Prop6";
             box-sizing: border-box;
             
             .main__propiedades__imagen{
                 grid-area: Prop1;
                 display: flex;  
             }
-
+    
             .main__propiedades__imagen2{
                 grid-area: Prop2;
                 
@@ -158,6 +167,7 @@
             .main__propiedades__imagen6{
                 grid-area: Prop6;  
             }
+    
             .ImagenPropdestc__card{
                 display: flex;
                 flex-direction: column;
@@ -171,12 +181,12 @@
                 align-items: center;
                 justify-content: center;
                 width: 18rem;
-
-                & img{
+    
+            & img{
                     margin: 1em;        
                 }
                 
-                & p{
+            & p{
                     margin: 0.1em;        
                 }
                 

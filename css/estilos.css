@@ -114,6 +114,15 @@ li{
     justify-content: center;
 }
 
+.mainPopiedades{
+    grid-area: main;
+    margin: 1em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
 .InicioPagina{
     height: 75vh;
     text-align: center;
