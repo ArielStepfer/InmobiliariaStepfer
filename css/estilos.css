@@ -10,6 +10,10 @@
         
         
     }
+
+.BodyIndex{
+    background-image: url(../Images/Background/Background\ office.jpg);
+}
     
 li{
     list-style: none;
@@ -318,6 +322,12 @@ MAIN H1{
     margin: 10px;
    
 
+}
+
+
+footer p{
+    text-align:justify;
+    font-size: 0.8em;    
 }
 
 .footer{
