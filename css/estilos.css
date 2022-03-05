@@ -191,7 +191,7 @@ MAIN H1{
 .ImagenPropdestc__card{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 1em;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
@@ -201,6 +201,7 @@ MAIN H1{
     align-items: center;
     justify-content: center;
     width: 18rem;
+    padding: 1em;
 }
 
 .ImagenPropdestc__card img{
