@@ -204,6 +204,22 @@ MAIN H1{
     padding: 1em;
 }
 
+.ImagenPropdestc__card--imagen{
+    display: flex;
+    flex-direction: column;
+}
+
+.ImagenPropdestc__card--imagen h2{
+    position:absolute;
+    bottom :1.2em;
+    color:white;
+    margin-left: 0.8em;
+    padding: 10px;
+    background-color: grey;
+    font-size: 1.2em;
+ 
+}
+
 .ImagenPropdestc__card img{
     margin: 1em;        
 }
