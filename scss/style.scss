@@ -4,6 +4,12 @@
     font-family: 'Ubuntu', sans-serif;   
     }
 
+    @for $i from 1 through 3 {
+        .main__propiedades__imagen#{$i} { grid-area: Prop$i; }
+      }
+       
+      
+
 $ancho:720px;
 
 .grid-container{
@@ -25,57 +31,50 @@ $ancho:720px;
         align-items: center;
         grid-area: header;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-        filter: alpha(opacity=80);
-        -moz-opacity: 0.80;
+        filter: alpha(opacity=90);
+        -moz-opacity: 0.90;
         -khtml-opacity: 0.8;
-        opacity: 0.8;  
+        opacity: 0.9;  
         position: sticky;
         top: 0;
         .header__NavBar{
             width: 100%;
             .Header__Logo{
                 margin-right: 40em; 
-                
-                a{
-                    color: black;
-                    align-items:baseline;
-                    text-justify: auto;
-                    text-decoration: none;
-                    font-weight: BOLDER; 
-                    
-                }
-            &:hover{
-                -webkit-transform: animate__zoomInDown;
-                transition: 3s ease-in;
-                }
             }
-            ul{
-                    list-style: none;
-                    display: flex;  
-                    flex-direction: row; 
-                    justify-content: flex-end;
-                    padding: 20px;
-                    
-                    .li{
-                        display: inline-block;
-                        width: auto;
-                        font-style: italic;
-                        border-style: initial;
-                        text-align: center;
-                        padding: 10px
-                        a{
-                            color: black;
-                            align-items:baseline;
-                            text-justify: auto;
-                            text-decoration: none;
-                            font-weight: BOLDER; 
-                        }   
-                        
-                    }
-                }
 
+            ul{
+                list-style: none;
+                display: flex;  
+                flex-direction: row; 
+                justify-content: flex-end;
+                padding: 20px;
+                
+                .li{
+                    display: inline-block;
+                    width: auto;
+                    font-style: italic;
+                    border-style: initial;
+                    text-align: center;
+                    padding: 10px;
+                    
+                    
+                }
+                & a {
+                        color: black;
+                        align-items:baseline;
+                        text-justify: auto;
+                        text-decoration: none;
+                        font-weight: BOLDER;
+                &:hover{
+                    color: red;
+                    font-size:  1em;
+                }
+                    }   
             }
+
         }
+    }
 
                     /*Main*/
 
@@ -137,8 +136,8 @@ $ancho:720px;
             padding: 1em;
             align-items: center;
             justify-content: center;
-            width: 30rem;
-            height: 40em;
+            width: 50%;
+            
         
             .IntroContacto{
                 text-align: center;
@@ -287,7 +286,10 @@ $ancho:720px;
                 transition: all 400ms ease;
                 margin: 20px;    
                 &:HOVER{
-                    box-shadow: 5px 5px 20px rgba(0,0,0,0.4); 
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                    color: white;
+                    background-color: #2fb4cc;
+                    
                 }
                 }
                 
