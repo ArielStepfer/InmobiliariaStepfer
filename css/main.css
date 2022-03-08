@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif; }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -29,17 +34,8 @@
           text-justify: auto;
           text-decoration: none;
           font-weight: BOLDER; }
-          .grid-container .header .header__NavBar .Header__Logo a:hover {
-            color: black;
-            border-top: solid;
-            border-BOTTOM: solid;
-            border-color: black;
-            align-items: baseline;
-            text-justify: auto;
-            text-decoration: none;
-            font-weight: BOLDER; }
         .grid-container .header .header__NavBar .Header__Logo:hover {
-          -webkit-transform: animate__zoomIn;
+          -webkit-transform: animate__zoomInDown;
           transition: 3s ease-in; }
       .grid-container .header .header__NavBar ul {
         list-style: none;
@@ -59,68 +55,126 @@
             padding-text-justify: auto;
             padding-text-decoration: none;
             padding-font-weight: BOLDER; }
-          .grid-container .header .header__NavBar ul .li:hover {
-            color: black;
-            border-top: solid;
-            border-BOTTOM: solid;
-            border-color: black;
-            align-items: baseline;
-            text-justify: auto;
-            text-decoration: none;
-            font-weight: BOLDER; }
   .grid-container .main {
     grid-area: main;
     margin: 1em;
     min-height: 100vh;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-direction: row; }
+    .grid-container .main .main__QSomos--section {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-row: 1fr auto;
+      grid-template-areas: "Img2 Texto1" "Img1 Texto1";
+      padding: 1em;
+      object-fit: cover; }
+      .grid-container .main .main__QSomos--section .imagen1Qsomos {
+        grid-area: Img1; }
+      .grid-container .main .main__QSomos--section .imagen2Qsomos {
+        grid-area: Img2; }
+      .grid-container .main .main__QSomos--section .QsomosTexto {
+        grid-area: Texto1;
+        height: 100%;
+        margin-left: 2em; }
+        .grid-container .main .main__QSomos--section .QsomosTexto h1 {
+          margin-bottom: 1em;
+          border-bottom: solid;
+          border-color: gray; }
+        .grid-container .main .main__QSomos--section .QsomosTexto h2 {
+          margin-top: 1em;
+          border-top: solid;
+          border-color: gray;
+          margin-bottom: 0.5em;
+          font-size: 3em; }
+          .grid-container .main .main__QSomos--section .QsomosTexto h2 p {
+            margin-top: 2em;
+            text-align: justify;
+            font-size: 4em; }
+    .grid-container .main .Formulario__Contacto {
+      border-color: black;
+      border-style: groove;
+      padding: 1em;
+      align-items: center;
+      justify-content: center;
+      width: 30rem;
+      height: 40em; }
+      .grid-container .main .Formulario__Contacto .IntroContacto {
+        text-align: center; }
+        .grid-container .main .Formulario__Contacto .IntroContacto h1 {
+          margin-top: 20px;
+          font-size: 4em; }
+        .grid-container .main .Formulario__Contacto .IntroContacto p {
+          margin-top: 20px;
+          font-size: 1.3em; }
     .grid-container .main .InicioPagina {
-      height: 75vh;
       text-align: center; }
       .grid-container .main .InicioPagina h1 {
         align-items: center;
-        font-size: 5em;
-        color: red;
-        margin-top: 1.5em; }
+        font-weight: 300;
+        font-size: 3em;
+        color: green;
+        margin-top: 5em; }
       .grid-container .main .InicioPagina h2 {
-        font-size: 4em;
-        color: black; }
-      .grid-container .main .InicioPagina a {
-        margin-top: 1em;
-        height: 2.5em;
-        font-size: 2em;
-        background-color: red; }
+        align-items: center;
+        font-size: 2.5em;
+        color: black;
+        font-weight: 300;
+        margin-bottom: 2em; }
+      .grid-container .main .InicioPagina .LinkVerProp {
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid transparent;
+        font-size: 1.5em;
+        color: #fefefe;
+        background-color: #ec1c24;
+        padding: 0.3em;
+        border-radius: 1.5em; }
+        .grid-container .main .InicioPagina .LinkVerProp:hover {
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+          font-size: 2em;
+          text-decoration: none;
+          transform: scale(2, 1); }
     .grid-container .main .Titulo {
       text-align: center;
-      margin: 1em; }
-  .grid-container .mainPopiedades {
+      margin: 1em;
+      -webkit-transform: scale-in-hor-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1; }
+  100% {
+    transform: scaleX(2);
+    opacity: 1; } }
+  .grid-container .mainPropiedades {
     grid-area: main;
     margin: 1em;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    flex-flow: column wrap; }
-    .grid-container .mainPopiedades .main__propiedades__contenedor {
+    flex-flow: column wrap;
+    text-align: center; }
+    .grid-container .mainPropiedades .main__propiedades__contenedor {
       display: flex;
       align-content: center;
       justify-content: center;
       flex-wrap: wrap;
-      grid-template-areas: "Prop1 Prop2 Prop3 Prop4" "Prop5 Prop6 Prop6 Prop6";
+      grid-template-areas: "Prop1 Prop2 Prop3 Prop4" "Prop5 Prop6 Prop7 Prop8";
       box-sizing: border-box; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen {
-        grid-area: Prop1;
-        display: flex; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen2 {
+      .grid-container .mainPropiedades .main__propiedades__contenedor .main__propiedades__imagen {
+        grid-area: Prop1; }
+      .grid-container .mainPropiedades .main__propiedades__contenedor .main__propiedades__imagen2 {
         grid-area: Prop2; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen3 {
+      .grid-container .mainPropiedades .main__propiedades__contenedor .main__propiedades__imagen3 {
         grid-area: Prop3; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen4 {
+      .grid-container .mainPropiedades .main__propiedades__contenedor .main__propiedades__imagen4 {
         grid-area: Prop4; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen5 {
+      .grid-container .mainPropiedades .main__propiedades__contenedor .main__propiedades__imagen5 {
         grid-area: Prop5; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .main__propiedades__imagen6 {
+      .grid-container .mainPropiedades .main__propiedades__contenedor .main__propiedades__imagen6 {
         grid-area: Prop6; }
-      .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card {
+      .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card {
         display: flex;
         flex-direction: column;
         margin: 20px;
@@ -133,11 +187,11 @@
         align-items: center;
         justify-content: center;
         width: 18rem; }
-        .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card img {
+        .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card img {
           margin: 1em; }
-        .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card p {
+        .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card p {
           margin: 0.1em; }
-        .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card a {
+        .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card a {
           text-decoration: none;
           display: inline-block;
           padding: 10px;
@@ -147,8 +201,19 @@
           border-radius: 4px;
           transition: all 400ms ease;
           margin: 20px; }
-          .grid-container .mainPopiedades .main__propiedades__contenedor .ImagenPropdestc__card a:HOVER {
+          .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card a:HOVER {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+        .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card .ImagenPropdestc__card--imagen {
+          display: flex;
+          flex-direction: column; }
+        .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card .ImagenPropdestc__card--imagen h2 {
+          position: absolute;
+          bottom: 1.2em;
+          color: white;
+          margin-left: 0.8em;
+          padding: 10px;
+          background-color: grey;
+          font-size: 1.2em; }
   .grid-container .footer {
     grid-area: footer;
     position: relative;
@@ -158,21 +223,6 @@
       height: 10em; }
     .grid-container .footer a {
       font-size: 3em; }
-  .grid-container a {
-    color: black;
-    align-items: baseline;
-    text-justify: auto;
-    text-decoration: none;
-    font-weight: BOLDER; }
-    .grid-container a:hover {
-      color: black;
-      border-top: solid;
-      border-BOTTOM: solid;
-      border-color: black;
-      align-items: baseline;
-      text-justify: auto;
-      text-decoration: none;
-      font-weight: BOLDER; }
   .grid-container .ImagenPropdestc__card {
     display: flex;
     flex-direction: column;
@@ -204,4 +254,5 @@
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
 
 .BodyIndex {
-  background-image: url(../Images/Background/Background_office.jpg); }
+  background-image: url(../Images/Background/Background_office.jpg);
+  background-size: auto; }
