@@ -48,9 +48,9 @@
       grid-template-columns: 1fr auto;
       grid-row: 1fr auto;
       grid-template-areas: "Img2 Texto1" "Img1 Texto1";
-      padding: 1em;
-      object-fit: cover; }
-      .grid-container .main .main__QSomos .imagen1Qsomos {
+      padding: 1em; }
+      .grid-container .main .main__QSomos object-fit:cover
+.imagen1Qsomos {
         grid-area: Img1; }
       .grid-container .main .main__QSomos .imagen2Qsomos {
         grid-area: Img2; }
@@ -73,15 +73,44 @@
       padding: 1em;
       align-items: center;
       justify-content: center;
-      width: 50%; }
+      width: 40%; }
+      @media (max-width: 480px) {
+        .grid-container .main .Formulario__Contacto {
+          width: 100%;
+          text-align: center; } }
+      @media (min-width: 480px) and (max-width: 728px) {
+        .grid-container .main .Formulario__Contacto {
+          width: 90%;
+          text-align: center; } }
       .grid-container .main .Formulario__Contacto .IntroContacto {
         text-align: center; }
         .grid-container .main .Formulario__Contacto .IntroContacto h1 {
           margin-top: 20px;
-          font-size: 4em; }
+          border-bottom: solid;
+          border-color: red; }
         .grid-container .main .Formulario__Contacto .IntroContacto p {
-          margin-top: 20px;
-          font-size: 1.3em; }
+          margin-top: 20px; }
+        @media (max-width: 480px) {
+          .grid-container .main .Formulario__Contacto .IntroContacto h1 {
+            margin-top: 20px;
+            border-bottom: solid;
+            border-color: blue; }
+          .grid-container .main .Formulario__Contacto .IntroContacto p {
+            margin-top: 20px; } }
+        @media (min-width: 480px) and (max-width: 728px) {
+          .grid-container .main .Formulario__Contacto .IntroContacto h1 {
+            margin-top: 20px;
+            border-bottom: solid;
+            border-color: green; }
+          .grid-container .main .Formulario__Contacto .IntroContacto p {
+            margin-top: 20px; } }
+        @media (min-width: 728px) and (max-width: 1024px) {
+          .grid-container .main .Formulario__Contacto .IntroContacto h1 {
+            margin-top: 20px;
+            border-bottom: solid;
+            border-color: red; }
+          .grid-container .main .Formulario__Contacto .IntroContacto p {
+            margin-top: 20px; } }
     .grid-container .main .InicioPagina {
       text-align: center; }
       .grid-container .main .InicioPagina h1 {

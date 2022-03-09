@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 *{
     margin:0;
@@ -68,8 +69,7 @@
             grid-template-areas: "Img2 Texto1"
                                  "Img1 Texto1";
             padding: 1em;
-            object-fit:cover;
-            
+            object-fit:cover
             .imagen1Qsomos{
                 grid-area: Img1;
             }
@@ -100,18 +100,74 @@
             padding: 1em;
             align-items: center;
             justify-content: center;
-            width: 50%;
+            width: 40%;
+
+            @include smartphone {
+                width: 100%;
+                text-align: center;
+                
+            }
+            @include tablets {
+                width: 90%;
+                text-align: center;
+            }
+            
+
+
             
             .IntroContacto{
+
                     text-align: center;
-                & h1{
+                h1{
                     margin-top: 20px;
-                    font-size: 4em;
+                    border-bottom: solid;
+                    border-color: red;
                 }
         
-                & p{
+                p{
                     margin-top: 20px;
-                    font-size: 1.3em;
+                }
+            
+            
+                @include smartphone {
+                
+                    h1{
+                        margin-top: 20px;
+                        border-bottom: solid;
+                        border-color: blue;
+                    }
+            
+                    p{
+                        margin-top: 20px;
+                    }
+
+                }
+                @include tablets {
+                
+                    h1{
+                        margin-top: 20px;
+                        border-bottom: solid;
+                        border-color: green;
+                    }
+            
+                    p{
+                        margin-top: 20px;
+                    }
+
+                }
+                
+                @include desktop {
+                
+                    h1{
+                        margin-top: 20px;
+                        border-bottom: solid;
+                        border-color: red;
+                    }
+            
+                    p{
+                        margin-top: 20px;
+                    }
+
                 }
             }
         }
@@ -123,7 +179,7 @@
                 font-size: 3em;
                 color: green;
                 margin-top: 5em;
-            
+
             }
             h2{
                 
