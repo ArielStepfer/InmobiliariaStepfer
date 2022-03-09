@@ -28,33 +28,40 @@
         opacity: 0.9;  
         position: sticky;
         top: 0;
+        width: 100%;
         .header__NavBar{
-            
+            display: flex;
             .Header__Logo{
                 margin-right: 40em; 
             }
-        
-            
-
-                a {
-                    color: black;
-                    align-items:baseline;
-                    text-justify: auto;
-                    text-decoration: none;
-                    font-weight: 1000;
-                    font-size: $letraHeader;
-                    &:hover{
-                        color: red;
-                        font-size:  $letraHeader * 2;
-                        font-weight: 2000;
-                        
-                    }
-                }   
-            
+            a {
+                color: black;
+                align-items:baseline;
+                text-justify: auto;
+                text-decoration: none;
+                font-weight: 1000;
+                font-size: $letraHeader;
+                &:hover{
+                    color: red;
+                    font-size:  $letraHeader * 2;
+                    font-weight: 2000;                   
+                }
+            }   
+    
         }
     }
 
-        .main__QSomos--section{
+                    /*Main*/
+
+    .main{
+        grid-area: main;
+        margin: 1em;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center; 
+        flex-direction: row;
+
+        .main__QSomos{
             display: grid;
             grid-template-columns: 1fr auto;
             grid-row: 1fr auto;
@@ -66,11 +73,9 @@
             .imagen1Qsomos{
                 grid-area: Img1;
             }
-            
             .imagen2Qsomos{
                 grid-area: Img2;    
             }
-            
             .QsomosTexto{
                 grid-area: Texto1;
                 height: 100%;
@@ -78,22 +83,13 @@
                 & h1{
                     margin-bottom: 1em;
                     border-bottom: solid;
-                    border-color: gray;   
+                    border-color:red;   
                 }
                 & h2{
                     margin-top: 1em;
                     border-top: solid;
                     border-color: gray;
-                    margin-bottom: 0.5em;
-                    font-size: 3em;
-
-                 & p{
-                        margin-top: 2em;
-                        text-align:justify;
-                        font-size: 4em;
-                      
-                    }
-                    
+                    padding-top: 0.5em;    
                 }
             }
         }
@@ -140,11 +136,11 @@
             .LinkVerProp{
                     vertical-align: middle;
                     text-align: center;
-                    border: 1px solid transparent;
+                    border: 2px solid transparent;
                     font-size: 1.5em;
                     color: #fefefe;
                     background-color: #ec1c24;
-                    padding: 0.3em;
+                    padding: 0.5em;
                     border-radius: 1.5em;
                 &:hover{
                     box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
@@ -177,9 +173,9 @@
             .ImagenPropdestc__card{
                 display: flex;
                 flex-direction: column;
-                margin: 20px;
+                margin: 1em;
                 border-radius: 6px;
-                overflow: hidden;
+                overflow:hidden;
                 box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
                 cursor: default;
                 transition: all 400ms ease;
@@ -187,25 +183,26 @@
                 align-items: center;
                 justify-content: center;
                 width: $anchoCard;
+                padding-right: 0.6em;
     
                 & img{
-                    margin: 1em;        
+                    margin: $anchoCard * 0.05;        
                 }
                 
                 & p{
-                    margin: 0.1em;        
+                    margin: $anchoCard * 0.01;        
                 }
                 
                 & a{
-                    text-decoration: none;
-                    display: inline-block;
-                    padding: 10px;
-                    margin-top: 10px;
-                    color:#2fb4cc;
-                    border: 1px solid #2fb4cc;
-                    border-radius: 4px;
-                    transition: all 400ms ease;
-                    margin: 20px;    
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 10px;
+                        margin-top: 10px;
+                        color:#2fb4cc;
+                        border: 1px solid #2fb4cc;
+                        border-radius: 4px;
+                        transition: all 400ms ease;
+                        margin: 20px;    
                     &:HOVER{
                         box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
                         color: white;
@@ -255,7 +252,7 @@
 
 .BodyIndex{
     background-image: url(../Images/Background/Background_office.jpg);
-    background-size: auto;
+    object-fit:cover;
     background-repeat: no-repeat;
 }
 

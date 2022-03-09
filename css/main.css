@@ -19,20 +19,23 @@
     -khtml-opacity: 0.8;
     opacity: 0.9;
     position: sticky;
-    top: 0; }
-    .grid-container .header .header__NavBar .Header__Logo {
-      margin-right: 40em; }
-    .grid-container .header .header__NavBar a {
-      color: black;
-      align-items: baseline;
-      text-justify: auto;
-      text-decoration: none;
-      font-weight: 1000;
-      font-size: 1em; }
-      .grid-container .header .header__NavBar a:hover {
-        color: red;
-        font-size: 2em;
-        font-weight: 2000; }
+    top: 0;
+    width: 100%; }
+    .grid-container .header .header__NavBar {
+      display: flex; }
+      .grid-container .header .header__NavBar .Header__Logo {
+        margin-right: 40em; }
+      .grid-container .header .header__NavBar a {
+        color: black;
+        align-items: baseline;
+        text-justify: auto;
+        text-decoration: none;
+        font-weight: 1000;
+        font-size: 1em; }
+        .grid-container .header .header__NavBar a:hover {
+          color: red;
+          font-size: 2em;
+          font-weight: 2000; }
   .grid-container .main {
     grid-area: main;
     margin: 1em;
@@ -40,35 +43,30 @@
     display: flex;
     justify-content: center;
     flex-direction: row; }
-    .grid-container .main .main__QSomos--section {
+    .grid-container .main .main__QSomos {
       display: grid;
       grid-template-columns: 1fr auto;
       grid-row: 1fr auto;
       grid-template-areas: "Img2 Texto1" "Img1 Texto1";
       padding: 1em;
       object-fit: cover; }
-      .grid-container .main .main__QSomos--section .imagen1Qsomos {
+      .grid-container .main .main__QSomos .imagen1Qsomos {
         grid-area: Img1; }
-      .grid-container .main .main__QSomos--section .imagen2Qsomos {
+      .grid-container .main .main__QSomos .imagen2Qsomos {
         grid-area: Img2; }
-      .grid-container .main .main__QSomos--section .QsomosTexto {
+      .grid-container .main .main__QSomos .QsomosTexto {
         grid-area: Texto1;
         height: 100%;
         margin-left: 2em; }
-        .grid-container .main .main__QSomos--section .QsomosTexto h1 {
+        .grid-container .main .main__QSomos .QsomosTexto h1 {
           margin-bottom: 1em;
           border-bottom: solid;
-          border-color: gray; }
-        .grid-container .main .main__QSomos--section .QsomosTexto h2 {
+          border-color: red; }
+        .grid-container .main .main__QSomos .QsomosTexto h2 {
           margin-top: 1em;
           border-top: solid;
           border-color: gray;
-          margin-bottom: 0.5em;
-          font-size: 3em; }
-          .grid-container .main .main__QSomos--section .QsomosTexto h2 p {
-            margin-top: 2em;
-            text-align: justify;
-            font-size: 4em; }
+          padding-top: 0.5em; }
     .grid-container .main .Formulario__Contacto {
       border-color: black;
       border-style: groove;
@@ -101,11 +99,11 @@
       .grid-container .main .InicioPagina .LinkVerProp {
         vertical-align: middle;
         text-align: center;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         font-size: 1.5em;
         color: #fefefe;
         background-color: #ec1c24;
-        padding: 0.3em;
+        padding: 0.5em;
         border-radius: 1.5em; }
         .grid-container .main .InicioPagina .LinkVerProp:hover {
           box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
@@ -129,7 +127,7 @@
       .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card {
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 1em;
         border-radius: 6px;
         overflow: hidden;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -138,11 +136,12 @@
         transform: translatey(-3%);
         align-items: center;
         justify-content: center;
-        width: 18rem; }
+        width: 18em;
+        padding-right: 0.6em; }
         .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card img {
-          margin: 1em; }
+          margin: 0.9em; }
         .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card p {
-          margin: 0.1em; }
+          margin: 0.18em; }
         .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card a {
           text-decoration: none;
           display: inline-block;
@@ -183,5 +182,5 @@
 
 .BodyIndex {
   background-image: url(../Images/Background/Background_office.jpg);
-  background-size: auto;
+  object-fit: cover;
   background-repeat: no-repeat; }
