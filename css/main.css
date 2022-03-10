@@ -146,7 +146,7 @@
             border-color: red; }
           .grid-container .main .Formulario__Contacto .IntroContacto p {
             margin-top: 20px; } }
-      .grid-container .main .Formulario__Contacto .boton_personalizado, .grid-container .main .Formulario__Contacto .boton_personalizado .boton_personalizado--verde {
+      .grid-container .main .Formulario__Contacto .boton_personalizado, .grid-container .main .Formulario__Contacto .boton_personalizado--verde {
         margin: auto;
         text-decoration: none;
         padding: 10px;
@@ -158,16 +158,16 @@
         border: 2px solid #0016b0;
         width: auto;
         text-align: center; }
-        .grid-container .main .Formulario__Contacto .boton_personalizado:hover, .grid-container .main .Formulario__Contacto .boton_personalizado .boton_personalizado--verde:hover {
+        .grid-container .main .Formulario__Contacto .boton_personalizado:hover, .grid-container .main .Formulario__Contacto .boton_personalizado--verde:hover {
           color: #1883ba;
           background-color: #ffffff; }
-        .grid-container .main .Formulario__Contacto .boton_personalizado .boton_personalizado--verde {
-          background-color: green; }
+      .grid-container .main .Formulario__Contacto .boton_personalizado--verde {
+        background-color: green; }
     .grid-container .main .InicioPagina {
       text-align: center; }
       .grid-container .main .InicioPagina h1 {
         align-items: center;
-        font-weight: 300;
+        font-weight: 800;
         font-size: 3em;
         color: green;
         margin-top: 5em; }
@@ -175,7 +175,7 @@
         align-items: center;
         font-size: 2.5em;
         color: black;
-        font-weight: 300;
+        font-weight: 500;
         margin-bottom: 2em; }
       .grid-container .main .InicioPagina .LinkVerProp {
         vertical-align: middle;
