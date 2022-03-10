@@ -226,19 +226,27 @@
                 color: #ffffff;
                 background-color: #1883ba;
                 border-radius: 6px;
-                border: 2px solid #0016b0;
                 width: auto;
                 text-align: center;
+                font-size: $letraHeader;
                 
                 &:hover{
-                  color: #1883ba;
+                  color: #187EB2;
+                  font-weight: 800;
                   background-color: #ffffff;
+                  border: #538235;
+                  border-style: groove;
+                  box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
+                  font-size: $letraHeader * 2;
                 }
                 
             }
             .boton_personalizado--verde{
                 @extend .boton_personalizado;
                 background-color: green;
+                &:hover{
+                    color: #538235;
+                }
                 
             }
         }

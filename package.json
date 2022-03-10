@@ -1,7 +1,7 @@
 {
   "name": "stepfer-propiedades",
   "version": "1.0.0",
-  "description": "",
+  "description": "Inmobiliaria, propiedades a la venta, alquiler y tasacion de inmuebles en Ciudad de Buenos Aires",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
