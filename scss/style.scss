@@ -124,22 +124,38 @@
         }
         
         .Formulario__Contacto{
+            display: flex;
+            flex-flow: column wrap;
             border-color: black;
             border-style: groove;
             padding: 1em;
             align-items: center;
             justify-content: center;
-            width: 40%;
+            width: $anchoCard * 2 ;
+           
 
             @include smartphone {
+                display: flex;
+                flex-flow: column wrap;
+                border-color: black;
+                border-style: groove;
+                padding: 1em;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
-                text-align: center;
-                
+                height: auto;
             }
             @include tablets {
                 width: 90%;
-                text-align: center;
-            }
+                display: flex;
+            flex-flow: column wrap;
+            border-color: black;
+            border-style: groove;
+            padding: 1em;
+            align-items: center;
+            justify-content: center;
+                height: auto;
+                }
             
 
 
@@ -197,6 +213,32 @@
                         margin-top: 20px;
                     }
 
+                }
+            }
+
+            .boton_personalizado{
+                margin-left: 10em;
+                text-decoration: none;
+                padding: 10px;
+                font-weight: 600;
+                font-size: $letraHeader;
+                color: #ffffff;
+                background-color: #1883ba;
+                border-radius: 6px;
+                border: 2px solid #0016b0;
+                width: auto;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                &:hover{
+                  color: #1883ba;
+                  background-color: #ffffff;
+                }
+                
+                .boton_personalizado--verde{
+                    @extend .boton_personalizado;
+                    background-color: green;
+                    
                 }
             }
         }

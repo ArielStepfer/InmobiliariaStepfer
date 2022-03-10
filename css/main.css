@@ -86,20 +86,36 @@
           grid-template-areas: "Img1" "Img2"                       "Texto1";
           object-fit: cover; } }
     .grid-container .main .Formulario__Contacto {
+      display: flex;
+      flex-flow: column wrap;
       border-color: black;
       border-style: groove;
       padding: 1em;
       align-items: center;
       justify-content: center;
-      width: 40%; }
+      width: 36em; }
       @media (max-width: 480px) {
         .grid-container .main .Formulario__Contacto {
+          display: flex;
+          flex-flow: column wrap;
+          border-color: black;
+          border-style: groove;
+          padding: 1em;
+          align-items: center;
+          justify-content: center;
           width: 100%;
-          text-align: center; } }
+          height: auto; } }
       @media (min-width: 480px) and (max-width: 728px) {
         .grid-container .main .Formulario__Contacto {
           width: 90%;
-          text-align: center; } }
+          display: flex;
+          flex-flow: column wrap;
+          border-color: black;
+          border-style: groove;
+          padding: 1em;
+          align-items: center;
+          justify-content: center;
+          height: auto; } }
       .grid-container .main .Formulario__Contacto .IntroContacto {
         text-align: center; }
         .grid-container .main .Formulario__Contacto .IntroContacto h1 {
@@ -129,6 +145,25 @@
             border-color: red; }
           .grid-container .main .Formulario__Contacto .IntroContacto p {
             margin-top: 20px; } }
+      .grid-container .main .Formulario__Contacto .boton_personalizado, .grid-container .main .Formulario__Contacto .boton_personalizado .boton_personalizado--verde {
+        margin-left: 10em;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 1em;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 2px solid #0016b0;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        justify-items: center; }
+        .grid-container .main .Formulario__Contacto .boton_personalizado:hover, .grid-container .main .Formulario__Contacto .boton_personalizado .boton_personalizado--verde:hover {
+          color: #1883ba;
+          background-color: #ffffff; }
+        .grid-container .main .Formulario__Contacto .boton_personalizado .boton_personalizado--verde {
+          background-color: green; }
     .grid-container .main .InicioPagina {
       text-align: center; }
       .grid-container .main .InicioPagina h1 {
