@@ -24,7 +24,13 @@
     .grid-container .header .header__NavBar {
       display: flex; }
       .grid-container .header .header__NavBar .Header__Logo {
-        margin-right: 40em; }
+        margin-right: 41em; }
+        @media (max-width: 480px) {
+          .grid-container .header .header__NavBar .Header__Logo {
+            margin-right: 20em; } }
+        @media (min-width: 480px) and (max-width: 728px) {
+          .grid-container .header .header__NavBar .Header__Logo {
+            margin-right: 30em; } }
       .grid-container .header .header__NavBar a {
         color: black;
         align-items: baseline;
@@ -48,9 +54,9 @@
       grid-template-columns: 1fr auto;
       grid-row: 1fr auto;
       grid-template-areas: "Img2 Texto1" "Img1 Texto1";
-      padding: 1em; }
-      .grid-container .main .main__QSomos object-fit:cover
-.imagen1Qsomos {
+      padding: 1em;
+      object-fit: cover; }
+      .grid-container .main .main__QSomos .imagen1Qsomos {
         grid-area: Img1; }
       .grid-container .main .main__QSomos .imagen2Qsomos {
         grid-area: Img2; }
@@ -67,6 +73,18 @@
           border-top: solid;
           border-color: gray;
           padding-top: 0.5em; }
+      @media (max-width: 480px) {
+        .grid-container .main .main__QSomos {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas: "Img1"  "Texto1";
+          object-fit: cover; } }
+      @media (min-width: 480px) and (max-width: 728px) {
+        .grid-container .main .main__QSomos {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas: "Img1" "Img2"                       "Texto1";
+          object-fit: cover; } }
     .grid-container .main .Formulario__Contacto {
       border-color: black;
       border-style: groove;

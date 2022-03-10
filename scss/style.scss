@@ -33,7 +33,14 @@
         .header__NavBar{
             display: flex;
             .Header__Logo{
-                margin-right: 40em; 
+                margin-right: 41em; 
+                
+                @include smartphone{
+                    margin-right: 20em;
+                }
+                @include tablets{
+                    margin-right: 30em;
+                }
             }
             a {
                 color: black;
@@ -69,7 +76,8 @@
             grid-template-areas: "Img2 Texto1"
                                  "Img1 Texto1";
             padding: 1em;
-            object-fit:cover
+            object-fit:cover;
+
             .imagen1Qsomos{
                 grid-area: Img1;
             }
@@ -92,6 +100,27 @@
                     padding-top: 0.5em;    
                 }
             }
+            @include smartphone {
+                
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "Img1" 
+                                 "Texto1";
+            object-fit:cover;
+
+            }
+            @include tablets {
+            
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: "Img1"
+                                     "Img2"                      
+                                     "Texto1";
+                object-fit:cover;
+
+            }
+            
+           
         }
         
         .Formulario__Contacto{
