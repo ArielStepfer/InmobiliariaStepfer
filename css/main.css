@@ -94,7 +94,8 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 36em; }
+      width: 40em;
+      background-color: #D9CAB3; }
       @media (max-width: 480px) {
         .grid-container .main .Formulario__Contacto {
           display: flex;
@@ -122,28 +123,28 @@
         .grid-container .main .Formulario__Contacto .IntroContacto h1 {
           margin-top: 20px;
           border-bottom: solid;
-          border-color: red; }
+          border-color: #6D9886; }
         .grid-container .main .Formulario__Contacto .IntroContacto p {
           margin-top: 20px; }
         @media (max-width: 480px) {
           .grid-container .main .Formulario__Contacto .IntroContacto h1 {
             margin-top: 20px;
             border-bottom: solid;
-            border-color: blue; }
+            border-color: #42C2FF; }
           .grid-container .main .Formulario__Contacto .IntroContacto p {
             margin-top: 20px; } }
         @media (min-width: 480px) and (max-width: 728px) {
           .grid-container .main .Formulario__Contacto .IntroContacto h1 {
             margin-top: 20px;
             border-bottom: solid;
-            border-color: green; }
+            border-color: #85F4FF; }
           .grid-container .main .Formulario__Contacto .IntroContacto p {
             margin-top: 20px; } }
         @media (min-width: 728px) and (max-width: 1024px) {
           .grid-container .main .Formulario__Contacto .IntroContacto h1 {
             margin-top: 20px;
             border-bottom: solid;
-            border-color: red; }
+            border-color: #B8FFF9; }
           .grid-container .main .Formulario__Contacto .IntroContacto p {
             margin-top: 20px; } }
       .grid-container .main .Formulario__Contacto .boton_personalizado, .grid-container .main .Formulario__Contacto .boton_personalizado--verde {

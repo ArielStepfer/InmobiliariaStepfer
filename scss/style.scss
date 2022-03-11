@@ -132,7 +132,8 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: $anchoCard * 2 ;
+            width: $anchoCard * 2 + 4em ;
+            background-color: #D9CAB3;
            
 
             @include smartphone {
@@ -149,12 +150,12 @@
             @include tablets {
                 width: 90%;
                 display: flex;
-            flex-flow: column wrap;
-            border-color: black;
-            border-style: groove;
-            padding: 1em;
-            align-items: center;
-            justify-content: center;
+                flex-flow: column wrap;
+                border-color: black;
+                border-style: groove;
+                padding: 1em;
+                align-items: center;
+                justify-content: center;
                 height: auto;
                 }
             
@@ -167,7 +168,7 @@
                 h1{
                     margin-top: 20px;
                     border-bottom: solid;
-                    border-color: red;
+                    border-color: #6D9886;
                 }
         
                 p{
@@ -180,7 +181,7 @@
                     h1{
                         margin-top: 20px;
                         border-bottom: solid;
-                        border-color: blue;
+                        border-color: #42C2FF;
                     }
             
                     p{
@@ -193,7 +194,7 @@
                     h1{
                         margin-top: 20px;
                         border-bottom: solid;
-                        border-color: green;
+                        border-color: #85F4FF;
                     }
             
                     p{
@@ -207,7 +208,7 @@
                     h1{
                         margin-top: 20px;
                         border-bottom: solid;
-                        border-color: red;
+                        border-color: #B8FFF9;
                     }
             
                     p{
