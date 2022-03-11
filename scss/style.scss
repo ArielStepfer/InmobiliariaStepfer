@@ -29,19 +29,8 @@
         opacity: 0.9;  
         position: sticky;
         top: 0;
-        width: 100%;
-        .header__NavBar{
-            display: flex;
-            .Header__Logo{
-                margin-right: 41em; 
-                
-                @include smartphone{
-                    margin-right: 20em;
-                }
-                @include tablets{
-                    margin-right: 30em;
-                }
-            }
+        
+        
             a {
                 color: black;
                 align-items:baseline;
@@ -50,13 +39,14 @@
                 font-weight: 1000;
                 font-size: $letraHeader;
                 &:hover{
-                    color: red;
-                    font-size:  $letraHeader * 2;
-                    font-weight: 2000;                   
+                color: red;
+                font-size:  $letraHeader * 2;
+                font-weight: 2000;                   
                 }
-            }   
+            }
+           
     
-        }
+        
     }
 
                     /*Main*/
