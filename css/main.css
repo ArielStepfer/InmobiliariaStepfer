@@ -173,18 +173,27 @@
         .grid-container .main .Formulario__Contacto .boton_personalizado--verde:hover {
           color: #538235; }
     .grid-container .main .InicioPagina {
-      text-align: center; }
-      .grid-container .main .InicioPagina h1 {
+      text-align: center;
+      align-items: center; }
+      .grid-container .main .InicioPagina figure {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 3em;
+        justify-content: center;
+        align-items: flex-end; }
+        .grid-container .main .InicioPagina figure h1 {
+          font-weight: 1000; }
+      .grid-container .main .InicioPagina h2 {
         align-items: center;
         font-weight: 800;
         font-size: 3em;
         color: green;
-        margin-top: 5em; }
-      .grid-container .main .InicioPagina h2 {
+        margin-top: 1.5em; }
+      .grid-container .main .InicioPagina h3 {
         align-items: center;
         font-size: 2.5em;
         color: black;
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: 2em; }
       .grid-container .main .InicioPagina .LinkVerProp {
         vertical-align: middle;
