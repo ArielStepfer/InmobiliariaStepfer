@@ -54,7 +54,6 @@
     .main{
         order: 2;
         grid-area: main;
-        margin: 1em;
         min-height: 100vh;
         display: flex;
         justify-content: center; 
@@ -67,6 +66,7 @@
             grid-template-areas: "Img2 Texto1"
                                  "Img1 Texto1";
             padding: 1em;
+            background-color: $bgBody;
             
             .imagen1Qsomos{
                 grid-area: Img1;
@@ -136,6 +136,7 @@
         }
         
         .Formulario__Contacto{
+            margin: 0.5em;
             display: flex;
             flex-flow: column wrap;
             border-color: black;
@@ -239,7 +240,6 @@
                 color: #ffffff;
                 background-color: #1883ba;
                 border-radius: 6px;
-                width: auto;
                 text-align: center;
                 font-size: $letraHeader;
                 
@@ -276,21 +276,22 @@
             
                 h1{
                     font-weight: 1000;
+                    color: $h1Index;
                 }
             }
             h2{
                 align-items: center;
                 font-weight: 800;
                 font-size: 3em;
-                color: green;
-                margin-top: 1.5em;
+                color: $h2index;
+                margin-top: 1em;
 
             }
             h3{
                 
                 align-items: center;
                 font-size: 2.5em;
-                color: black;
+                color: $h3index;
                 font-weight: 700;
                 margin-bottom: 2em;
             }
@@ -300,7 +301,7 @@
                     border: 2px solid transparent;
                     font-size: 1.5em;
                     color: #fefefe;
-                    background-color: #ec1c24;
+                    background-color: $bgBotonIndex;
                     padding: 0.5em;
                     border-radius: 1.5em;
                 &:hover{
@@ -363,7 +364,7 @@
                         border: 1px solid #2fb4cc;
                         border-radius: 4px;
                         transition: all 400ms ease;
-                        margin: 20px;    
+                        margin-bottom: 1em;    
                     &:HOVER{
                         box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
                         color: white;
