@@ -69,13 +69,11 @@
             padding: 1em;
             
             .imagen1Qsomos{
-                grid-area: Img1;
-                object-fit:cover;
+                grid-area: Img1;    
             }
             
             .imagen2Qsomos{
                 grid-area: Img2; 
-                object-fit:cover;  
                 
                 & img{
                     height: 600px;
@@ -86,6 +84,7 @@
                 grid-area: Texto1;
                 height: 100%;
                 margin-left: 2em; 
+                font-size: $letraHeader;
                
                
                 & h1{

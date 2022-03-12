@@ -48,17 +48,16 @@
       grid-template-areas: "Img2 Texto1" "Img1 Texto1";
       padding: 1em; }
       .grid-container .main .main__QSomos .imagen1Qsomos {
-        grid-area: Img1;
-        object-fit: cover; }
+        grid-area: Img1; }
       .grid-container .main .main__QSomos .imagen2Qsomos {
-        grid-area: Img2;
-        object-fit: cover; }
+        grid-area: Img2; }
         .grid-container .main .main__QSomos .imagen2Qsomos img {
           height: 600px; }
       .grid-container .main .main__QSomos .QsomosTexto {
         grid-area: Texto1;
         height: 100%;
-        margin-left: 2em; }
+        margin-left: 2em;
+        font-size: 1em; }
         .grid-container .main .main__QSomos .QsomosTexto h1 {
           margin-bottom: 1em;
           border-bottom: solid;
