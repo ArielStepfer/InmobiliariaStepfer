@@ -46,7 +46,7 @@
       grid-row: 1fr auto;
       grid-template-areas: "Img2 Texto1" "Img1 Texto1";
       padding: 1em;
-      background-color: pink; }
+      background-color: white; }
       .grid-container .main .main__QSomos .imagen1Qsomos {
         grid-area: Img1; }
       .grid-container .main .main__QSomos .imagen2Qsomos {
@@ -57,7 +57,9 @@
         grid-area: Texto1;
         height: 100%;
         margin-left: 2em;
-        font-size: 1em; }
+        font-size: 1.2em; }
+        .grid-container .main .main__QSomos .QsomosTexto p {
+          font-size: 1em; }
         .grid-container .main .main__QSomos .QsomosTexto h1 {
           margin-bottom: 1em;
           border-bottom: solid;
@@ -150,7 +152,7 @@
           .grid-container .main .Formulario__Contacto .IntroContacto p {
             margin-top: 20px; } }
       .grid-container .main .Formulario__Contacto .boton_personalizado, .grid-container .main .Formulario__Contacto .boton_personalizado--verde {
-        margin: auto;
+        width: 100%;
         text-decoration: none;
         padding: 10px;
         font-weight: 600;
@@ -234,8 +236,8 @@
         cursor: default;
         transition: all 400ms ease;
         transform: translatey(-3%);
-        align-items: center;
-        justify-content: center;
+        /*align-items: center;
+    justify-content: $Posicion;*/
         width: 18em;
         padding-right: 0.6em; }
         .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card img {
@@ -247,11 +249,11 @@
           display: inline-block;
           padding: 10px;
           margin-top: 10px;
-          color: #2fb4cc;
+          color: black;
           border: 1px solid #2fb4cc;
           border-radius: 4px;
           transition: all 400ms ease;
-          margin-bottom: 1em; }
+          margin: 1em; }
           .grid-container .mainPropiedades .main__propiedades__contenedor .ImagenPropdestc__card a:HOVER {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             color: white;
@@ -267,6 +269,25 @@
           padding: 10px;
           background-color: grey;
           font-size: 1.2em; }
+      @media (max-width: 480px) {
+        .grid-container .mainPropiedades .main__propiedades__contenedor {
+          display: flex;
+          flex-direction: column;
+          margin: 1em;
+          border-radius: 6px;
+          overflow: hidden;
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          cursor: default;
+          transition: all 400ms ease;
+          transform: translatey(-3%);
+          /*align-items: center;
+    justify-content: $Posicion;*/
+          width: 18em;
+          padding-right: 0.6em; }
+          .grid-container .mainPropiedades .main__propiedades__contenedor img {
+            margin: 0.9em; }
+          .grid-container .mainPropiedades .main__propiedades__contenedor p {
+            margin: 0.18em; } }
   .grid-container footer {
     grid-area: footer;
     position: relative;
