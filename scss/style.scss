@@ -98,6 +98,7 @@
                 }
             }
             .CardNosotros{
+                
                 margin-top: 1em;
                 border-top: solid;
                 border-bottom: solid;
@@ -105,17 +106,19 @@
                 padding-top: 0.5em;  
                 display: flex;
                 flex-flow: row wrap;
-
-                &__Image{
-                    margin: 0.5em;    
-                }
+            
                 
                 .CardNosotros__Text{
                     margin-left: 0.5em;
                 }
-                
+            
+                @include smartphone {
+                    @include CardProp(flex-start);
+
             }
-            @include smartphone {
+            }
+        
+        @include smartphone {
                 
             display: grid;
             grid-template-columns: 1fr;
@@ -124,14 +127,14 @@
             object-fit:cover;
 
             }
-            @include tablets {
+        @include tablets {
             
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-areas: "Img1"
-                                     "Img2"                      
-                                     "Texto1";
-                object-fit:cover;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "Img1"
+                                    "Img2"                      
+                                    "Texto1";
+            object-fit:cover;
 
             }
             
@@ -152,32 +155,29 @@
             background-color: #D9CAB3;
            
 
-            @include smartphone {
-                display: flex;
-                flex-flow: column wrap;
-                border-color: black;
-                border-style: groove;
-                padding: 1em;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: auto;
+        @include smartphone {
+            display: flex;
+            flex-flow: column wrap;
+            border-color: black;
+            border-style: groove;
+            padding: 1em;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        }
+        @include tablets {
+            width: 90%;
+            display: flex;
+            flex-flow: column wrap;
+            border-color: black;
+            border-style: groove;
+            padding: 1em;
+            align-items: center;
+            justify-content: center;
+            height: auto;
             }
-            @include tablets {
-                width: 90%;
-                display: flex;
-                flex-flow: column wrap;
-                border-color: black;
-                border-style: groove;
-                padding: 1em;
-                align-items: center;
-                justify-content: center;
-                height: auto;
-                }
-            
-
-
-            
+                     
             .IntroContacto{
 
                     text-align: center;
@@ -336,10 +336,11 @@
             box-sizing: border-box;
 
             .ImagenPropdestc__card{
+                
                 @include CardProp(center);
                 
                 & a{
-                        @include LinkCardProp(black);  
+                        @include LinkCardProp;  
                 }
                 
                 .ImagenPropdestc__card--imagen{
@@ -356,11 +357,9 @@
                     background-color: grey;
                     font-size: 1.2em;
                 } 
+                
             }
-            @include smartphone {
-                @include CardProp(flex-start);
-
-            }
+            
         }
     }
 
